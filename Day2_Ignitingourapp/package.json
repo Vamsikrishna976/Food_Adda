@@ -1,0 +1,33 @@
+{
+  "name": "react.js_learning",
+  "version": "1.0.0",
+  "description": "This is react learning folder by Vamsi krishna",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vamsikrishna976/React_Learning.git"
+  },
+  "keywords": [
+    "Raect",
+    "learning"
+  ],
+  "author": "vamsi Krishna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vamsikrishna976/React_Learning/issues"
+  },
+  "homepage": "https://github.com/Vamsikrishna976/React_Learning#readme",
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6"
+  },
+  "browserslist": [
+    "last 3 Chrome version",
+    "last 3 Safari version"
+  ]
+}
