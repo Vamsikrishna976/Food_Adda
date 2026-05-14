@@ -1,4 +1,4 @@
-3611
+3621
 132C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\@parcel\runtime-js\src\helpers\node\css-loader.js134231354939592284 0
 105C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\update-browserslist-db134231354927620759 1
 117C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\@parcel\packager-js\lib\helpers.js134231354940786888 0
@@ -10,7 +10,7 @@
 125C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\utility-types\dist\aliases-and-guards.d.ts134231354930542725 0
 92C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\@mischnic134231354923841259 1
 130C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\@parcel\resolver-default\lib\DefaultResolver.js134231354938392210 0
-74C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\dist134231414245487522 1
+74C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\dist134232571470625982 1
 120C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\@swc\helpers\src\_new_arrow_check.mjs134231354953585538 0
 104C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\dotenv-expand\LICENSE134231354930122567 0
 113C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\@parcel\core\lib\AssetGraph.js134231354948000090 0
@@ -21,7 +21,7 @@
 142C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\react-dom\cjs\react-dom-server-legacy.browser.production.js134231378353677820 0
 114C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\caniuse-lite\data\regions\MD.js134231354955256153 0
 103C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\weak-lru-cache\tests134231354927292057 1
-82C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\package.json134231378355902501 0
+82C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\package.json134232530510405707 0
 105C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\@parcel\diagnostic\src134231354946035736 1
 113C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\electron-to-chromium\README.md134231354930216035 0
 103C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\msgpackr\index.d.cts134231354930346835 0
@@ -32,10 +32,10 @@
 87C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\package-lock.json134231378356240934 0
 103C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\lightningcss\LICENSE134231354927950186 0
 114C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\caniuse-lite\data\regions\TG.js134231354958933012 0
-80C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\.gitignore134231364956076847 0
+80C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\.gitignore134231418899446717 0
 121C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\@parcel\transformer-babel\lib\types.js134231354937965838 0
 118C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\update-browserslist-db\package.json134231354927251693 0
-76C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\app.js134231388708676825 0
+76C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\app.js134232568802844648 0
 126C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\caniuse-lite\data\features\object-values.js134231354956326774 0
 128C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\@parcel\transformer-svg\src\SVGTransformer.js134231354933882062 0
 97C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\tslib\tslib.js134231354927166418 0
@@ -266,6 +266,7 @@
 154C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\msgpackr-extract\node_modules\.bin\node-gyp-build-optional-packages.ps1134231354960721607 0
 112C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\@swc\helpers\esm\_ts_param.js134231354952160579 0
 89C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\semver134231354934665466 1
+106C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\dist\Day2_Ignitingourapp.f72d0d54.js134232569419086778 0
 108C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\chalk\source\templates.js134231354926562685 0
 92C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\term-size134231354929629378 1
 109C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\node-addon-api\except.gypi134231354927092751 0
@@ -566,7 +567,7 @@
 126C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\caniuse-lite\data\features\pad-start-end.js134231354956698701 0
 98C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\lmdb\caching.js134231354942348076 0
 135C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\caniuse-lite\data\features\css-boxdecorationbreak.js134231354942510895 0
-85C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\dist\index.html134231414245072560 0
+85C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\dist\index.html134232571470542533 0
 112C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\type-fest\source\mutable.d.ts134231354931189957 0
 162C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\@parcel\source-map\parcel_sourcemap_wasm\dist-web\parcel_sourcemap_wasm_bg.wasm134231354942831028 0
 103C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\msgpackr-extract\src134231354926417815 1
@@ -845,6 +846,7 @@
 141C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\@parcel\runtime-service-worker\lib\ServiceWorkerRuntime.js134231354938081625 0
 112C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\@parcel\workers\src\Worker.js134231354936080695 0
 108C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\scheduler\index.native.js134231378352964811 0
+110C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\dist\Day2_Ignitingourapp.37561b27.js.map134232532434128829 0
 102C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\lmdb\dict\dict2.txt134231354943436712 0
 114C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\scheduler\unstable_post_task.js134231378353447835 0
 96C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\react-dom\cjs134231378355615499 1
@@ -1409,6 +1411,7 @@
 120C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\electron-to-chromium\full-versions.js134231354927965802 0
 123C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\lmdb\dependencies\lz4\lib\dll\liblz4.def134231354939434841 0
 136C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\@swc\helpers\_\_class_private_method_set\package.json134231354935450562 0
+110C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\dist\Day2_Ignitingourapp.1e394e6a.js.map134232571470625982 0
 138C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\lmdb\dependencies\lz4\lib\dll\example\fullbench-dll.sln134231354943276939 0
 131C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\caniuse-lite\data\features\orientation-sensor.js134231354956663245 0
 142C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\lmdb\dependencies\lz4\lib\dll\example\fullbench-dll.vcxproj134231354943562874 0
@@ -1911,6 +1914,7 @@
 114C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\caniuse-lite\data\regions\SE.js134231354958133855 0
 114C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\caniuse-lite\data\regions\SG.js134231354958229877 0
 138C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\@swc\helpers\_\_class_apply_descriptor_set\package.json134231354932983898 0
+110C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\dist\Day2_Ignitingourapp.f72d0d54.js.map134232569419141674 0
 114C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\@parcel\transformer-postcss\src134231354936541829 1
 114C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\caniuse-lite\data\regions\SH.js134231354958229877 0
 132C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\caniuse-lite\data\features\keyboardevent-which.js134231354954480190 0
@@ -2401,6 +2405,7 @@
 117C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\caniuse-lite\data\features\ping.js134231354956907188 0
 122C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\caniuse-lite\data\features\png-alpha.js134231354956907188 0
 122C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\@swc\helpers\_\_class_private_field_get134231354934475038 1
+107C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\dist\Day2_Ignitingourapp.e211e260.css134232532433894960 0
 127C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\caniuse-lite\data\features\pointer-events.js134231354956907188 0
 120C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\caniuse-lite\data\features\pointer.js134231354956907188 0
 124C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\caniuse-lite\data\features\pointerlock.js134231354956907188 0
@@ -2420,6 +2425,7 @@
 130C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\caniuse-lite\data\features\rtcpeerconnection.js134231354957617182 0
 145C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\@parcel\core\test\fixtures\invalid-source-missing\package.json134231354954881297 0
 119C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\caniuse-lite\data\features\run-in.js134231354957617182 0
+106C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\dist\Day2_Ignitingourapp.37561b27.js134232532433874888 0
 139C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\caniuse-lite\data\features\same-site-cookie-attribute.js134231354957955902 0
 128C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\caniuse-lite\data\features\x-doc-messaging.js134231354960290655 0
 115C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\@parcel\core\src\public\Asset.js134231354947944095 0
@@ -3607,6 +3613,10 @@
 94C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\.bin\parcel134231354960721607 0
 98C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\.bin\semver.cmd134231354960721607 0
 114C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\node_modules\.bin\update-browserslist-db.ps1134231354960721607 0
+106C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\dist\Day2_Ignitingourapp.1e394e6a.js134232571470542533 0
+107C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\dist\Day2_Ignitingourapp.3a01df49.css134232529281665293 0
+111C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\dist\Day2_Ignitingourapp.3a01df49.css.map134232529281838896 0
 106C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\dist\Day2_Ignitingourapp.4c0e4d81.js134231414245148663 0
 110C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\dist\Day2_Ignitingourapp.4c0e4d81.js.map134231414245424507 0
 107C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\dist\Day2_Ignitingourapp.d3e63e39.css134231414245335055 0
+111C:\Users\JOHNY\OneDrive\Desktop\React.js_Learning\Day2_Ignitingourapp\dist\Day2_Ignitingourapp.e211e260.css.map134232532434128829 0
