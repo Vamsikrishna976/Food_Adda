@@ -1,0 +1,10 @@
+# Ignore build artifacts and cache folders
+node_modules/
+.dist/
+**/.parcel-cache/
+**/dist/
+**/node_modules/
+
+# Ignore operating system files
+.DS_Store
+Thumbs.db
