@@ -9,7 +9,7 @@ const ResCard = (props) => {
         avgRating,
         sla: { deliveryTime },
         cloudinaryImageId,
-    } = resData?.data;
+    } = resData?.info;
   return (
     <div className="res-card">
       <img
