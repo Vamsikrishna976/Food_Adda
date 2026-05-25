@@ -1,5 +1,7 @@
 
 import { useState } from "react";
+import { Link } from "react-router-dom";
+
 const logo = new URL("../utilis/assets/logo.png", import.meta.url);
 
 const Header = () => {
@@ -14,16 +16,16 @@ const [btnName, setBtnName] = useState("Login");
       <div className="Nav-items">
         <ul>
           <li>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="/about">About</a>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <a href="/contact">Contact us</a>
+            <Link to="/contact">Contact us</Link>
           </li>
           <li>
-            <a href="/cart">Cart</a>
+            <Link to="/cart">Cart</Link>
           </li>
           <button className="login-btn" 
           onClick={() => {
