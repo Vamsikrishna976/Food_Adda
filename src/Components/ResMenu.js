@@ -2,7 +2,7 @@ import React, { use } from "react";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 import { MENU_API } from "../utilis/constants";
-import {useParams} from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 const ResMenu = () => {
   const [resInfo, setResInfo] = React.useState(null);
@@ -17,9 +17,9 @@ const ResMenu = () => {
     const data = await fetch(MENU_API + resId);
     const jsonData = await data.json();
     setMenuData(jsonData);
-    const menuInfo = jsonData?.data?.cards[2]?.card?.card?.info;
+    const menuInfo = jsonData?.data?.cards?.find((x) => x?.card?.card?.info)
+      ?.card?.card?.info;
     setResInfo(menuInfo);
-    console.log(jsonData);
   };
   if (resInfo === null) {
     return <Shimmer />;
@@ -33,16 +33,25 @@ const ResMenu = () => {
     totalRatingsString,
   } = resInfo;
 
-  const itemCards =
-    menuData?.data?.cards[5]?.groupedCard?.cardGroupMap?.REGULAR?.cards[4]?.card
-      ?.card?.itemCards;
+  const regularCards = menuData?.data?.cards?.find(
+    (x) => x?.groupedCard?.cardGroupMap?.REGULAR?.cards,
+  )?.groupedCard?.cardGroupMap?.REGULAR?.cards;
+
+  const itemCards = regularCards?.find((x) => x?.card?.card?.itemCards)?.card
+    ?.card?.itemCards;
+
+  const categories = regularCards?.filter(
+    (c) =>
+      c?.card?.card?.["@type"] ===
+      "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+  );
 
   return (
     <div className="res-menu">
       <div className="restaurant-details">
         <h1 className="res-name">{name}</h1>
 
-        <div className="res-card">
+        <div className="res-summary">
           <h3>
             ⭐ 4.1 ({totalRatingsString}) • {costForTwoMessage}
           </h3>
@@ -58,38 +67,40 @@ const ResMenu = () => {
       </div>
 
       <div className="menu-list">
-        {itemCards?.map((item) => {
-          const info = item?.card?.info;
+        {categories?.map((category) =>
+          category?.card?.card?.itemCards?.map((item) => {
+            const info = item?.card?.info;
 
-          return (
-            <div className="menu-card" key={info?.id}>
-              <div className="menu-left">
-                <h2>{info?.name}</h2>
+            return (
+              <div className="menu-card" key={info?.id}>
+                <div className="menu-left">
+                  <h2>{info?.name}</h2>
 
-                <h3>₹{(info?.defaultPrice || info?.price) / 100}</h3>
+                  <h3>₹{(info?.defaultPrice || info?.price) / 100}</h3>
 
-                <p className="rating">
-                  ⭐ {info?.ratings?.aggregatedRating?.rating}
-                </p>
+                  <p className="rating">
+                    ⭐ {info?.ratings?.aggregatedRating?.rating}
+                  </p>
 
-                <p className="description">{info?.description}</p>
+                  <p className="description">{info?.description}</p>
+                </div>
+
+                <div className="menu-right">
+                  <img
+                    className="food-image"
+                    src={
+                      "https://media-assets.swiggy.com/swiggy/image/upload/" +
+                      info?.imageId
+                    }
+                    alt={info?.name}
+                  />
+
+                  <button className="add-btn">ADD</button>
+                </div>
               </div>
-
-              <div className="menu-right">
-                <img
-                  className="food-image"
-                  src={
-                    "https://media-assets.swiggy.com/swiggy/image/upload/" +
-                    info?.imageId
-                  }
-                  alt={info?.name}
-                />
-
-                <button className="add-btn">ADD</button>
-              </div>
-            </div>
-          );
-        })}
+            );
+          }),
+        )}
       </div>
     </div>
   );
