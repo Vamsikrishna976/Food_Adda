@@ -1,28 +1,53 @@
 import React, { use } from "react";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
-import { MENU_API } from "../utilis/constants";
+
 import { useParams } from "react-router-dom";
+import useResMenu from "../utilis/useResMenu";
 
 const ResMenu = () => {
-  const [resInfo, setResInfo] = React.useState(null);
-  const [menuData, setMenuData] = useState(null);
+  // const [resInfo, setResInfo] = React.useState(null);
+  // const [menuData, setMenuData] = useState(null);
   const { resId } = useParams();
-  useEffect(() => {
-    fetchMenu();
-  }, []);
+  // useEffect(() => {
+  //   fetchMenu();
+  // }, []);
+
+  const menuData = useResMenu(resId);
+  const resInfo = menuData?.data?.cards?.find((x) => x?.card?.card?.info)?.card
+    ?.card?.info;
 
   // const restaurantId = 123; // Replace with actual restaurant ID
-  const fetchMenu = async () => {
-    const data = await fetch(MENU_API + resId);
-    const jsonData = await data.json();
-    setMenuData(jsonData);
-    const menuInfo = jsonData?.data?.cards?.find((x) => x?.card?.card?.info)
-      ?.card?.card?.info;
-    setResInfo(menuInfo);
-  };
-  if (resInfo === null) {
+  // const fetchMenu = async () => {
+  //   const data = await fetch(MENU_API + resId);
+  //   const jsonData = await data.json();
+  //   setMenuData(jsonData);
+  //   const menuInfo = jsonData?.data?.cards?.find((x) => x?.card?.card?.info) ?.card?.card?.info;
+  //   setResInfo(menuInfo);
+  // };
+  if (menuData === null) {
     return <Shimmer />;
+  }
+
+  if (!resInfo) {
+    return (
+      <div className="restaurant-error">
+        <div className="error-card">
+          <div className="error-icon">🍽️</div>
+          <h1>Restaurant Unavailable</h1>
+          <p>
+            We couldn't load the restaurant details at the moment. Please check
+            your connection or try again later.{" "}
+          </p>
+          <button
+            className="retry-btn"
+            onClick={() => window.location.reload()}
+          >
+            Try Again
+          </button>
+        </div>
+      </div>
+    );
   }
 
   const {

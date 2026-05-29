@@ -14,7 +14,7 @@ class About extends React.Component {
         avatar_url: "Dummy Avatar URL",
       },
     };
-  }
+  };
 
   async componentDidMount() {
     const data = await fetch("https://api.github.com/users/Vamsikrishna976");
@@ -22,8 +22,8 @@ class About extends React.Component {
     this.setState({
       userInfo: jsonData,
     });
-    console.log(jsonData);
-  }
+    // console.log(jsonData);
+  };
 
   render() {
     const { name, avatar_url, bio, blog } = this.state.userInfo;
@@ -44,6 +44,6 @@ class About extends React.Component {
         </div>
       </div>
     );
-  }
-}
+  };
+};
 export default About;
