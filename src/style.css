@@ -1341,3 +1341,74 @@ body{
     transform: translateY(-8px);
   }
 }
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.contact-card {
+  width: 700px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card h1 {
+  text-align: center;
+  color: #d35400;
+  margin-bottom: 10px;
+}
+
+.contact-card p {
+  text-align: center;
+  color: #555;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #d35400;
+}
+
+.contact-form button {
+  background-color: #d35400;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 17px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contact-form button:hover {
+  background-color: #b84300;
+}
+
+.contact-info {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.contact-info h3 {
+  color: #d35400;
+  margin-bottom: 10px;
+}

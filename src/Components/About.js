@@ -8,10 +8,6 @@ class About extends React.Component {
     super(props);
     this.state = {
       userInfo: {
-        name: "Dummy Name",
-        location: "Dummy Location",
-        contact: "Dummy Contact",
-        avatar_url: "Dummy Avatar URL",
       },
     };
   };
