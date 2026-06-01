@@ -1,6 +1,0 @@
-/node_modules
-/.parcel-cache
-/dist
-
-# Parcel cache folder should not be committed
-**/.parcel-cache/
