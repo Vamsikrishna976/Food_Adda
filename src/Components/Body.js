@@ -19,6 +19,7 @@ const Body = () => {
     const data = await fetch(RestaurantList);
     const jsonData = await data.json();
     console.log(jsonData);
+    console.log(jsonData?.data?.cards);
 
     // Optional chaining
     // this is before more restaturants are added to the API
@@ -26,11 +27,31 @@ const Body = () => {
     // setRestaurantList(restaurantList);
     // setFilteredRestaurantList(jsonData?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
 
-    const restaurantList = jsonData?.data?.cards?.find(
-      (x) => x?.card?.card?.gridElements?.infoWithStyle?.restaurants,
-    )?.card?.card?.gridElements?.infoWithStyle?.restaurants;
-    setRestaurantList(restaurantList);
-    setFilteredRestaurantList(restaurantList);
+    // const restaurantList = jsonData?.data?.cards?.find(
+    //   (x) => x?.card?.card?.gridElements?.infoWithStyle?.restaurants,
+    // )?.card?.card?.gridElements?.infoWithStyle?.restaurants;
+    // const restaurantList = jsonData?.data?.cards
+    //   ?.filter((x) => x?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+    //   ?.flatMap((x) => x?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+    // console.log(restaurantList.length);
+    // setRestaurantList(restaurantList);
+    // setFilteredRestaurantList(restaurantList);
+    // console.log(restaurantList);
+    const restaurantList =
+      jsonData?.data?.cards
+        ?.filter((x) => x?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+        ?.flatMap(
+          (x) => x?.card?.card?.gridElements?.infoWithStyle?.restaurants,
+        ) || [];
+    const uniqueRestaurants = Array.from(
+      new Map(
+        restaurantList.map((restaurant) => [restaurant.info.id, restaurant]),
+      ).values(),
+    );
+    console.log("Original:", restaurantList.length);
+    console.log("Unique:", uniqueRestaurants.length);
+    setRestaurantList(uniqueRestaurants);
+    setFilteredRestaurantList(uniqueRestaurants);
   };
 
   // Whenever state variable update, react triggers a re-render and the updated UI is displayed on the screen.

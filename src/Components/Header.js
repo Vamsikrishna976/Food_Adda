@@ -1,5 +1,5 @@
 
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 
 const logo = new URL("../utilis/assets/logo.png", import.meta.url);
@@ -7,7 +7,6 @@ const logo = new URL("../utilis/assets/logo.png", import.meta.url);
 const Header = () => {
 
 const [btnName, setBtnName] = useState("Login");
-
   return (
     <div className="Header">
       <div className="logo-container">
@@ -26,6 +25,9 @@ const [btnName, setBtnName] = useState("Login");
           </li>
           <li>
             <Link to="/cart">Cart</Link>
+          </li>
+          <li>
+            <Link to="/user">User</Link>
           </li>
           <button className="login-btn" 
           onClick={() => {

@@ -12,6 +12,8 @@ class About extends React.Component {
     };
   };
 
+
+
   async componentDidMount() {
     const data = await fetch("https://api.github.com/users/Vamsikrishna976");
     const jsonData = await data.json();
