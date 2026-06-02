@@ -1,4 +1,12 @@
+import { useDispatch } from "react-redux";
+import { addItem } from "../utilis/cartSlice";
+
 const RestaurantCategory = ({ data, showItems, setShowIndex }) => {
+  const dispatch = useDispatch();
+  const handleAddToCart = (item) => {
+    // Logic to add the item to the cart
+    dispatch(addItem(item));
+  };
   return (
     <div className="category-container">
       <div className="category-header" onClick={setShowIndex}>
@@ -43,7 +51,9 @@ const RestaurantCategory = ({ data, showItems, setShowIndex }) => {
                   />
                 )}
 
-                <button className="add-btn">ADD</button>
+                <button className="add-btn" 
+                onClick={() => handleAddToCart(info)}
+                >ADD</button>
               </div>
             </div>
           );

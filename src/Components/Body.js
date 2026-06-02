@@ -18,8 +18,8 @@ const Body = () => {
   const fetchData = async () => {
     const data = await fetch(RestaurantList);
     const jsonData = await data.json();
-    console.log(jsonData);
-    console.log(jsonData?.data?.cards);
+    // console.log(jsonData);
+    // console.log(jsonData?.data?.cards);
 
     // Optional chaining
     // this is before more restaturants are added to the API

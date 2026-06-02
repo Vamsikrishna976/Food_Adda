@@ -4,28 +4,30 @@ import Header from "./Components/Header";
 import Body from "./Components/Body";
 import "./style.css";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import "/index.css";
 // import About from "./Components/About";
 // import ContactUs from "./Components/ContactUs";
 import Error from "./Components/Error";
 import ResMenu from "./Components/ResMenu";
 import Shimmer from "./Components/Shimmer";
+import { Provider } from "react-redux";
+import appStore from "./utilis/appStore";
+import Cart from "./Components/Cart";
 
-
-
-const About = lazy(()=> import("./Components/About"));
-const ContactUs = lazy(()=> import("./Components/ContactUs"));
-
+const About = lazy(() => import("./Components/About"));
+const ContactUs = lazy(() => import("./Components/ContactUs"));
 
 const Applayout = () => {
   return (
-    <div className="app-container">
-      <Header />
-      {/* <Body /> */}
-      <Outlet />
-    </div>
+    <Provider store={appStore}>
+      <div className="app-container">
+        <Header />
+        {/* <Body /> */}
+        <Outlet />
+      </div>
+    </Provider>
   );
 };
-
 
 const appRouter = createBrowserRouter([
   {
@@ -36,19 +38,32 @@ const appRouter = createBrowserRouter([
         path: "/",
         element: <Body />,
       },
-       {
-    path: "/about",
-    element: <Suspense fallback={<Shimmer />}><About /></Suspense>,
-  },
-  {
-    path: "/contact",
-    element: <Suspense fallback={<Shimmer />}><ContactUs /></Suspense>,
-  },
+      {
+        path: "/about",
+        element: (
+          <Suspense fallback={<Shimmer />}>
+            <About />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/contact",
+        element: (
+          <Suspense fallback={<Shimmer />}>
+            <ContactUs />
+          </Suspense>
+        ),
+      },
       {
         path: "/restaurants/:resId",
         element: <ResMenu />,
-      }],
-    errorElement: <Error />
+      },
+      {
+        path: "/cart",
+        element: <Cart />,
+      },
+    ],
+    errorElement: <Error />,
   },
 ]);
 

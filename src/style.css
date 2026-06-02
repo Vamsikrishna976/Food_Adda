@@ -1868,3 +1868,8 @@ body{
   font-size: 20px;
   font-weight: 600;
 }
+
+.Nav-items ul li{
+  font-size: 22px;
+  font-weight: 700;
+}
