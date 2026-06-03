@@ -2,7 +2,7 @@ import React, { Suspense, lazy } from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./Components/Header";
 import Body from "./Components/Body";
-import "./style.css";
+import "/style.css";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import "/index.css";
 // import About from "./Components/About";
@@ -13,6 +13,8 @@ import Shimmer from "./Components/Shimmer";
 import { Provider } from "react-redux";
 import appStore from "./utilis/appStore";
 import Cart from "./Components/Cart";
+import Login from "./Components/Login";
+import Signup from "./Components/Signup";
 
 const About = lazy(() => import("./Components/About"));
 const ContactUs = lazy(() => import("./Components/ContactUs"));
@@ -61,6 +63,14 @@ const appRouter = createBrowserRouter([
       {
         path: "/cart",
         element: <Cart />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/signup",
+        element: <Signup />,
       },
     ],
     errorElement: <Error />,

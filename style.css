@@ -202,9 +202,14 @@ body{
   font-weight: 700;
 }
 
-.cuisine {
-  color: #444;
+.cuisines {
+  /* color: #444; */
   font-size: 14px;
+  min-height: 60px !important;
+}
+
+.name-res{
+  min-height: 60px;
 }
 
 .res-container a {
