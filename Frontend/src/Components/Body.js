@@ -122,7 +122,7 @@ const Body = () => {
             <input
               type="text"
               placeholder="Search for restaurants... "
-              className="search-box"
+              className="search-box placeholder:text-xs"
               value={searchText}
               onChange={(e) => {
                 setSearchText(e.target.value);
@@ -152,7 +152,7 @@ const Body = () => {
             setFilteredRestaurantList(filteredList);
           }}
         >
-          Top rated restaurants{" "}
+          Top rated {" "}
         </button>
       </div>
       <div className="res-container">

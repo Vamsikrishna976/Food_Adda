@@ -40,7 +40,7 @@ const Login = () => {
 
   return (
     <div className="flex justify-center items-center min-h-[80vh]">
-      <div className="bg-white shadow-lg rounded-xl p-8 w-[400px]">
+      <div className="bg-white shadow-lg rounded-xl p-8 w-[85%] max-w-[350px]">
         <h1 className="text-3xl font-bold text-center mb-6 text-orange-600">
           Welcome to FoodAdda 🍔
         </h1>
